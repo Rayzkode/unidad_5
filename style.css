@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    color: rgb(39, 52, 153);
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(39, 52, 153);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px; /* Aumenta el espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: rgb(39, 52, 153); /* Lila */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+}
+
+.portada img {
+    size: 1340px;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.middle_container {
+    background-color: rgb(39, 52, 153);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.middle_container p{
+    color: white;
+}
+
+.center_container {
+    background-color: rgb(39, 52, 153);
+    padding: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+}
+
+.center_img {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.center_img img{
+    display: flex;
+    justify-content: center;
+    width: 150%;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    margin-left: 50px;
+    max-width: 60em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right-section h1 {
+    color: #bd96e2;
+    font-size: 50px;
+}
+
+.right-section p {
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right-section ul li {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: rgb(39, 52, 153);
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20em; /* Agregado margen superior */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: rgb(39, 52, 153);
+}
+
+.footer-bottom {
+    background-color: rgb(39, 52, 153);
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, .middle_container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 30px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Reduce el espacio entre elementos del menú */
+    }
+
+    .portada img {
+        width: 100%; /* Hace que la imagen de portada sea 100% del ancho del contenedor */
+    }
+
+    .right-section,
+    .left-section {
+        margin-left: 0; /* Elimina el margen izquierdo en contenedores */
+        text-align: center; /* Centra el texto */
+    }
+
+    .right-section img,
+    .left-section img {
+        min-width: 200px; /* Establece un tamaño mínimo para las imágenes */
+        width: auto; /* Permite que las imágenes se escalen automáticamente */
+        max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Cambia el diseño del pie de página a una columna */
+        align-items: center;
+    }
+}
+
+/* Estilos adicionales para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Aumenta el espacio entre elementos del menú */
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1025px) {
+    .container,
+    .middle_container {
+        padding: 50px 100px; /* Aumenta el espacio en los contenedores en pantallas grandes */
+    }
+
+    .right-section,
+    .left-section {
+        max-width: 50%; /* Limita el ancho de las secciones a la mitad del contenedor */
+    }
+}
